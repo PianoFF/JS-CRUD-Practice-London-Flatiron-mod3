@@ -14,15 +14,19 @@ document.addEventListener("DOMContentLoaded", function(){
         const li = document.createElement('li');
         ul.appendChild(li); 
 
-        //update button;
         //delete button; 
-
+        
         li.id = film.id;
         li.innerText = film.title;
         
         const p = document.createElement('p');
         p.innerText = `Director: ${film.director} \n Producer: ${film.producer} \n Released on: ${film.release_date}\n Description: ${film.description}`;
         li.appendChild(p);
+        //update button;
+        const updateBtn = document.createElement("button");
+        li.appendChild(updateBtn); 
+        updateBtn.innerText = 'Update This Film'; 
+        updateBtn.classList = 'update-button'; 
     }
 
     fetch("http://localhost:3000/films")
