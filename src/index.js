@@ -34,8 +34,9 @@ document.addEventListener("DOMContentLoaded", function(){
     header.appendChild(newFilmButton);
     newFilmButton.innerText = "Create A New Film"; 
     newFilmButton.classList = 'header-btn';
+    //the creation is done via this new page:
+    newFilmButton.addEventListener('click', ()=> location.replace('./create.html'));
 
-    
     //end of header
 
     //'create' _ display all content
