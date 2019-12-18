@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function(){
     ul.id = "all-films"; 
     body.insertBefore(ul, script); 
 
-    const br = document.createElement('br'); 
+    // const br = document.createElement('br'); 
+
     //'create' _ display all content
     const createAFilmEntry = function(film){
         const li = document.createElement('li');
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(){
         li.innerText = film.title;
         
         const p = document.createElement('p');
-        p.innerText = `Director: ${film.director} \n Producer: ${film.producer} \n Released on: ${film.release_date}\n Description: ${film.description}.`;
+        p.innerText = `Director: ${film.director} \n Producer: ${film.producer} \n Released on: ${film.release_date}\n Description: ${film.description}`;
         li.appendChild(p);
     }
 
