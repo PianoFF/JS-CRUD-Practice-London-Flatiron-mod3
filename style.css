@@ -10,3 +10,14 @@
     font-weight: bold;
     background-color: #B0FFF4; 
 }
+
+.header-btn{
+    position: static;
+    border: 2px solid rgb(3, 71, 62);
+    border-radius: 25px;
+    box-shadow: 2px 2px  rgb(6, 189, 164);
+    text-align: center;
+    font-weight: bold;
+}
+
+
