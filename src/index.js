@@ -145,7 +145,7 @@ function saveAndUpdate(e){
     };
 
 
-    configObj = {
+    const configObj = {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
